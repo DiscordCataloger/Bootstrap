@@ -80,6 +80,43 @@
       <button class="btn btn-success" type="">7</button>
     </div>
   </div>
+
+  <!-- vertical group -->
+  <div class="btn-group-vertical">
+    <button class="btn btn-primary">top</button>
+    <button class="btn btn-primary">middle</button>
+    <button class="btn btn-primary">bottom</button>
+  </div>
+
+  <!-- bottom dropdown -->
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" 
+    type="button" 
+    data-toggle="dropdown">
+    my dropdown</button>
+  </div>
+  <div class="dropdown-button btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">my dropdown</div>
+  <div class="dropdown-menu">
+    <a href="#" class="dropdown-item">link 1</a>
+    <a href="#" class="dropdown-item">link 2</a>
+    <a href="#" class="dropdown-item">link 3</a>
+  </div>
+  <br />
+  <!-- splite dropdown -->
+  <!--.btn-group>btn.btn.btn-primary[type="button"]{my button}+btn.btn.btn-secondary.dropdown-toggle[type="button" data-toggle="dropdown"]>span{toggle dropdown}^.dropdown-menu>a.dropdown-item{link $}*2+.dropdown-divider+a.dropdown-item{link 3}-->
+  <div class="btn-group">
+    <button class="btn btn-primary" type="button">my button</button>
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+      <span>toggle dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a href="#" class="dropdown-item">link 1</a>
+      <a href="#" class="dropdown-item">link 2</a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">link 3</a>
+    </div>
+  </div>
+
 </div>
 
 <body>
