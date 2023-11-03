@@ -97,7 +97,7 @@
           <span id="rangeValue">1</span>
         </div>
 
-        <!-- range (simpler, not JS needed) -->
+        <!-- range (simpler, no JS needed) -->
         <div class="form-group">
           <label for="membership">Membership Level</label>
           <input
@@ -115,6 +115,56 @@
           Submit
         </button>
       </form>
+      <!-- form inline -->
+      <form action="#" class="form-inline">
+        <input
+          type="text"
+          id="username"
+          class="form-control mr-2"
+          placeholder="enter username"
+        />
+        <input
+          type="password"
+          id="password"
+          class="form-control mr-2"
+          placeholder="password"
+        />
+        <div class="form-check">
+          <label class="form-check-label mr-4">
+            <input type="checkbox" class="form-check-input" />remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-light">submit</button>
+      </form>
+
+      <!-- form row -->
+      <form action="#">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="first name" />
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="last name" />
+          </div>
+        </div>
+      </form>
+
+      <!-- validation -->
+      <div class="form-group">
+        <label for="username">username</label>
+        <input type="text" id="username" class="form-control is-valid" />
+      </div>
+      <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" id="password" class="form-control is-valid" />
+        <input type="password" id="password" class="form-control is-invalid" />
+        <div class="invalid-feedback">The password is not strong enough</div>
+      </div>
+      <div class="form-group">
+        <label for="password2">confirm password</label>
+        <input type="password" id="password2" class="form-control is-valid" />
+        <div class="invalid-feedback">Passwords do not match</div>
+      </div>
     </div>
 
     <!-- range JS -->
